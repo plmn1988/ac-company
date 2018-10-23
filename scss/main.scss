@@ -130,20 +130,6 @@ section {
             margin-top: 20px;
         }
         .gallery {
-            > div:nth-child(even){
-                .image-container {
-                    // &:after {
-                    //     display: block;
-                    //     position: relative;
-                    //     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $theme-color 100%);
-                    //     opacity: 0.3;
-                    //     height: 300px;
-                    //     width: 100%;
-                    //     content: '';
-                    // }
-                }
-            }
-
             .image-container {
                 height: 300px;
                 position: relative;
@@ -162,6 +148,7 @@ section {
         }
     }
 }
+
 
 footer {
     background-color: $footer-bg-color;

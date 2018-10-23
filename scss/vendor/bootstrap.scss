@@ -31,7 +31,7 @@ $link-hover-color: darken($theme-color, 15%);
 $primary :$theme-color;
 
 
-$fa-font-path:  "../node_modules/@fortawesome/fontawesome-free/webfonts";
+$fa-font-path:  "font";
 
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/functions";
