@@ -9351,6 +9351,36 @@ header #carouser-area #carouser-main .carousel-item {
   header #carouser-area #carouser-main .carousel-item .carousel-caption {
     top: 25%; }
 
+@media (max-width: 991px) and (min-width: 768px) {
+  header #carouser-area #carouser-main .carousel-item {
+    height: 300px; }
+    header #carouser-area #carouser-main .carousel-item h2 {
+      font-size: 28px; }
+    header #carouser-area #carouser-main .carousel-item h3 {
+      font-size: 16px; }
+    header #carouser-area #carouser-main .carousel-item a {
+      margin: auto;
+      font-size: 12px;
+      margin-top: 10px;
+      padding: 10px 15px; }
+    header #carouser-area #carouser-main .carousel-item .carousel-caption {
+      top: 20%; } }
+
+@media (max-width: 767px) {
+  header #carouser-area #carouser-main .carousel-item {
+    height: 200px; }
+    header #carouser-area #carouser-main .carousel-item h2 {
+      font-size: 16px; }
+    header #carouser-area #carouser-main .carousel-item h3 {
+      font-size: 12px; }
+    header #carouser-area #carouser-main .carousel-item a {
+      margin: auto;
+      font-size: 9px;
+      margin-top: 5px;
+      padding: 8px 12px; }
+    header #carouser-area #carouser-main .carousel-item .carousel-caption {
+      top: 15%; } }
+
 header #carouser-area #carouser-main > a > span {
   background-image: none;
   height: 38px;
