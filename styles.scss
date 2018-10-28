@@ -1,0 +1,423 @@
+// Custom variables
+// -- common
+$font-color: #666;
+$theme-color: #8dc63f;
+$enable-rounded: false;
+
+// -- navigation
+$nav-link-padding-y: 1rem;
+$navbar-light-color: #333;
+$navbar-light-hover-color: $theme-color;
+$navbar-light-active-color: $theme-color;
+$navbar-nav-link-padding-x: 1rem;
+
+// -- section
+$section-bg-color: #F6F6F6;
+$section-title-color: #000;
+
+// -- carousel
+$carousel-title-color: $theme-color;
+$carousel-subtitle-color: #FFF;
+
+// -- footer
+$footer-bg-color: #282828;
+$footer-color: lighten($footer-bg-color, 25%);
+$footer-copyright-bg: #1D1D1D;
+$footer-copyright-color: #7C7C7C;
+
+// -- button
+$link-color: $theme-color;
+$link-hover-color: darken($theme-color, 15%);
+$primary :$theme-color;
+
+$fa-font-path: "assets/fonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+// @import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+// @import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+// @import "../node_modules/bootstrap/scss/dropdown";
+// @import "../node_modules/bootstrap/scss/button-group";
+// @import "../node_modules/bootstrap/scss/input-group";
+// @import "../node_modules/bootstrap/scss/custom-forms";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+// @import "../node_modules/bootstrap/scss/breadcrumb";
+// @import "../node_modules/bootstrap/scss/pagination";
+// @import "../node_modules/bootstrap/scss/badge";
+// @import "../node_modules/bootstrap/scss/jumbotron";
+// @import "../node_modules/bootstrap/scss/alert";
+// @import "../node_modules/bootstrap/scss/progress";
+// @import "../node_modules/bootstrap/scss/media";
+// @import "../node_modules/bootstrap/scss/list-group";
+// @import "../node_modules/bootstrap/scss/close";
+// @import "../node_modules/bootstrap/scss/modal";
+// @import "../node_modules/bootstrap/scss/tooltip";
+// @import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/print";
+
+// Page Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic');
+
+// Font Awesome
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// @import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// Custom scss
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $font-color;
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    &.btn-primary {
+        text-transform: uppercase;
+        color: $white;
+    }
+}
+
+header {
+    nav {
+        .navbar-nav {
+            .nav-link {
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+            }
+        }
+    }
+}
+
+#carouser-area {
+    #carouser-main {
+        .carousel-indicators {
+            .active {
+                background-color: $theme-color;
+            }
+        }
+        .carousel-item {
+            text-align: center;
+            @media (max-width: 991px) {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h2 {
+                color: $theme-color;
+                font-size: 60px;
+            }
+            h3 {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                font-weight: 300;
+            }
+            a {
+                margin-top: 30px;
+                padding: 14px 33px;
+                text-transform: uppercase;
+                color: $white;
+                font-size: 16px;
+            }
+            .carousel-caption {
+                top: 25%;
+            }
+        }
+
+        @media (max-width: 991px) and (min-width: 768px) {
+            .carousel-item {
+                height: 300px;
+            
+                h2 {
+                    font-size: 28px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                a {
+                    margin: auto;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    padding: 10px 15px;
+                }
+                .carousel-caption {
+                    top: 20%;
+                }
+
+            }
+        }
+
+        @media (max-width: 767px) {
+            .carousel-item {
+                height: 200px;
+
+                h2 {
+                    font-size: 16px;
+                }
+                h3 {
+                    font-size: 12px;
+                }
+                a {
+                    margin: auto;
+                    font-size: 9px;
+                    margin-top: 5px;
+                    padding: 8px 12px;
+                }
+                .carousel-caption {
+                    top: 15%;
+                }
+            }
+        }
+        
+
+        > a {
+            > span {
+                background-image: none;
+                height: 38px;
+                font-size: 26px;
+            }
+            &.carousel-control-prev {
+                span:before {
+                    @extend .fa;
+                    @extend .fa-chevron-left;
+                }
+            }
+            &.carousel-control-next {
+                span:before {
+                    @extend .fa;
+                    @extend .fa-chevron-right;
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 60px 0 20px 0;
+
+    &:nth-child(odd) {
+        background-color: $section-bg-color;
+    }
+    &:not(#section-introduction) {
+        .section-title, .section-description {
+            text-align: center;
+        }
+    }
+    .section-title {
+        color: $section-title-color;
+        text-transform: uppercase;
+        font-size: 38px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-weight: 400;
+
+        @media (max-width: 767px) {
+            &.responsive-title {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .section-description {
+        padding-bottom: 30px;
+    }
+
+    &#section-introduction {
+        @media (max-width: 575px) {
+            text-align: center;
+            .logo-placeholder {
+                margin: 0 auto;
+            }
+        }
+        .offer-wrap {
+            .offer-container {
+                margin: 60px 0;
+                text-align: center;
+
+                @media (max-width: 767px) {
+                    margin: 30px 0;
+                }
+
+                .icon-wrap {
+                    i {
+                        color: $theme-color;
+                        font-size: 36px;
+                    }
+                }
+
+                h2 {
+                    font-size: 25px;
+                    margin: 15px 0;
+                }
+
+                p { 
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    &#section-services {
+        .service-box {
+            .service-icon {
+                margin-top: 5px;
+                float: left;
+                font-size: 24px;
+                color: $theme-color;
+            }
+            .service-description {
+                padding-left: 50px;
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    &#section-products {
+        .btn-menu {
+            margin-bottom: 15px;
+        }
+        .btn-more {
+            margin-top: 20px;
+        }
+        .gallery {
+            .image-container {
+                height: 300px;
+                position: relative;
+                background: $white;
+                
+                img {
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    max-height: 250px;
+                }
+            }
+        }
+    }
+
+    &#section-contact-us {
+        padding-bottom: 60px;
+
+        address {
+            i {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: $footer-bg-color;
+    color: $footer-color;
+
+    .section {
+        padding: 60px 0;
+
+        h3 {
+            color: $white;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 22px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        @media (max-width: 575px) {
+            padding: 30px 0;
+
+            .footer-widget {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    #copyright {
+        background-color: $footer-copyright-bg;
+        color: $footer-copyright-color;
+
+        @media (max-width: 767px) {
+            p, .nav-link {
+                font-size: 10px !important;
+                text-align: center;
+            }
+            ul {
+                justify-content: center !important;
+            }
+        }
+        .row {
+            padding: 15px 0;
+        }
+        p, ul {
+            margin-top: 15px;
+        }
+
+        ul .nav-link {
+            padding-top: 0;
+        }
+    }
+}
+
+
+// To remove
+.logo-placeholder {
+    height: 130px;
+    max-width: 250px;
+    position: relative;
+
+    h5 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $theme-color
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 25px;
+    }
+}
+
+.page-header {
+    background-color: $theme-color;
+    height: 90px;
+    width: 100%;
+    
+    h2 {
+        margin: 0;
+        color: $white;
+        line-height: 2.8;
+    }
+}
