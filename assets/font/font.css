@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Geraldton Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonRegular.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Thin";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonThin.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Thin Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonThinItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Extra Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonExtraLight.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonLight.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Extra Light Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonExtraLightItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Light Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonLightItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonMedium.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Medium Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonMediumItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonBold.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonBoldItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Extra Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonExtraBold.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Extra Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonExtraBoldItalic.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Black";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonBlack.otf");
+}
+
+@font-face {
+    font-family: "Geraldton Black Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: url("./GeraldtonBlackItalic.otf");
+}
